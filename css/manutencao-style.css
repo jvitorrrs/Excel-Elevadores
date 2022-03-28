@@ -1,0 +1,281 @@
+﻿body
+{
+    width:100vw!important;
+    overflow-x:hidden!important;
+}
+
+
+.container-3 {
+    width: 100vw;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+#title {
+    margin: 3vw 0 3vw 3vw;
+    background: rgba(211,211,211, 0.5);
+    width:93vw;
+    padding:2vw 0 2vw 2vw;
+}
+
+#title h1{
+    font-size:2vw;
+}
+
+.carousel slide{
+    width:40vw!important;
+}
+
+.carousel-inner img {
+    height: 28vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+#carousel, .carousel-2, .carousel-3, .carousel-4 {
+    margin: 4vw 0 4vw;
+}
+
+#carousel {
+    padding:3vw 0;
+    border:1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+    background: rgba(192,192,192, 0.2);
+}
+
+.carousel-title-1 {
+    text-align:center;
+    margin-bottom:0.5vw;
+    padding:1vw;
+    background: rgba(176,196,222, 0.7);
+}
+
+
+    .carousel-title-5 {
+        text-align:center;
+        margin-bottom:0.5vw;
+        padding:2vw;
+        height:fit-content;
+        background: rgba(176,196,222, 0.7);
+}
+
+.carousel-title-5 {
+    padding: 2.5vw 0;
+}
+
+.carousel-2 {
+    border: 1px solid;
+    padding: 4vw 0;
+    background: rgba(245,245,245);
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+}
+
+    .carousel-title-2 {
+    background: rgba(176,196,222, 0.7);
+    width: 30vw;
+    height:fit-content!important;
+}
+
+        .carousel-title-2 h3{
+            padding: 3vw 0 1vw 3vw;
+            font-size: 2vw;
+        }
+
+        .carousel-title-2 h5{
+            padding: 0 3vw 3vw 3vw;
+            font-size: 1.2vw !important;
+        }
+
+.carousel-3 {
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    background: rgba(192,192,192, 0.2);
+    padding: 3vw 0;
+}
+
+.carousel-title-3 {
+    padding: 3vw;
+    background: rgba(176,196,222, 0.5);
+    width: 30vw;
+    margin-top: 2vw;
+}
+
+    .carousel-title-3 h3{
+        padding-bottom:1vw;
+    }
+
+.carousel-4 {
+    background: rgba(192,192,192, 0.2);
+    padding: 3vw 0;
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.carousel-4-div {
+    background: rgba(176,196,222, 0.7);
+    padding: 2vw;
+    width: 30vw;
+}
+
+    .carousel-title-4 {
+    width: 30vw;
+}
+    .carousel-title-4 h3{
+        margin:2vw 0 2vw 0;
+    }
+
+
+    /*tablet*/
+
+@media (max-width:768px) {
+    body {
+        width: 100vw !important;
+        overflow-x: hidden !important;
+    }
+
+    .container-3 {
+        margin-top: 18vw;
+    }
+
+    #title h1 {
+        font-size: 3vw;
+    }
+
+    .carousel-inner img {
+        width: fit-content;
+        height: 40vw;
+    }
+
+    .carousel-title-1 {
+        width: 40vw;
+    }
+
+        .carousel-title-1 h3 {
+            font-size: 4vw;
+        }
+
+        .carousel-title-1 h5 {
+            font-size: 3vw;
+        }
+
+    .carousel-5 {
+        width: 35vw;
+    }
+
+        .carousel-5 img {
+            height: 46vw;
+        }        
+
+    .carousel-title-5 h3 {
+        font-size: 4vw;
+    }
+
+    /**/
+    .carousel-title-2 {
+        grid-area: header;
+        margin-left: 24vw;
+        width: 50vw;
+    }
+
+    #carouselExampleIndicators-2 {
+        grid-area: left;
+    }
+
+    #carouselExampleIndicators-3 {
+        grid-area: center;
+    }
+
+    #carouselExampleIndicators-4 {
+        grid-area: right;
+    }
+
+    .carousel-2 {
+        display: grid;
+        gap: 1vw;
+        grid-template-areas:
+            'header header header'
+            'left center right';
+    }
+
+    .carousel-title-2 h3 {
+        font-size: 3vw;
+    }
+
+    .carousel-title-2 h5 {
+        font-size: 2vw !important;
+    }
+
+    .carousel-2 h6 {
+        font-size: 2vw;
+    }
+
+    /**/
+
+    .carousel-title-3 h3 {
+        font-size: 3vw;
+    }
+
+    .carousel-title-3 h5 {
+        font-size: 2vw;
+    }
+
+    .carousel-3 h6 {
+        font-size: 2vw;
+    }
+
+    /**/
+   
+
+    .carousel-title-4 h3 {
+        font-size: 3vw;
+    }
+
+    .carousel-title-4 h5{
+        font-size:2vw;
+    }
+
+    .carousel-title-4 h6{
+        font-size:2vw;
+    }
+}
+
+@media (max-width:425px) {
+    #container-2 {
+        margin-bottom: 0;
+    }
+
+    h3 {
+        font-size:4vw!important;
+    }
+
+    h5 {
+        font-size:2.7vw!important;
+    }
+
+    .carousel-inner img{
+        height:50vw!important;
+    }
+
+        .carousel-caption h4{
+            font-size:5vw;
+        }
+
+
+    .carousel-title-5{
+        padding:5.9vw;
+    }
+}

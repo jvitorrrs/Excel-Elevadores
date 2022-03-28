@@ -1,0 +1,175 @@
+﻿body {
+    overflow-x:hidden!important;
+}
+
+#container-2 {
+    padding: 5vw;
+    margin: 2vw 3vw 2vw 2vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to left, transparent, mistyrose), url("texting.jpg");
+    border-radius: 10px;
+    background-size: 180vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: loadBackground 300ms;
+}
+
+#container-2 h5, #container-2 p{
+    margin:0;
+}
+
+#input-title{
+    font-size:30px;
+}
+
+#input-dropbox{
+    height:40px;
+    margin-bottom:2vw;
+}
+
+form {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight:lighter;
+    display:flex;
+    flex-direction:column;
+}
+
+#mensagem{
+    height:50px!important;
+}
+
+.input {
+    width: 30vw;
+    height: 30px;
+    font-size: 15px;
+    font-family: arial;
+    margin-bottom:1vw;
+}
+
+#container-2 div{
+    margin:0.5vw 0;
+}
+
+#botao-enviar {
+    margin-top: 1vw;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#texto-contato {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 5vw 10vw 15vw!important;
+    padding:2vw;
+    height:fit-content;
+    font-size: 2.5vw;
+    line-height: 4vw;
+    backdrop-filter:none;
+    box-shadow:0 0 0;
+    transition:300ms backdrop-filter ease-out, 300ms box-shadow ease-out;
+    border-radius:20px;
+}
+
+#texto-contato:hover{
+    backdrop-filter:blur(10px);
+    box-shadow:1px 1px 10px black;
+}
+
+@media (max-width:768px){
+
+    #container-2{
+        margin:15vw 2vw 5vw;
+    }
+
+    #contactModal{        
+        position:fixed;
+        width:60vw!important;
+        top:10vw;
+        left:19.5vw;
+        font-size:2vw;
+    }
+
+    #modal-button {
+        height:fit-content;
+        width:fit-content;
+        position: relative;
+        background-color:grey;
+        border-radius:40px;
+        padding:0.3vw 1vw 1vw 1vw;
+        left:52vw;
+        color:white!important;
+        font-size:2vw;
+    }
+
+    #botao-enviar{
+        width:15vw;
+        font-size:3vw;
+    }
+
+    .modal-body{
+        padding:2vw!important;
+    }
+
+    #texto-contato {
+        display: none !important;
+    }
+
+    #container-2 {
+        background-size: cover;
+        height: fit-content;
+        display: flex;
+        padding-bottom: 0;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom:5vw;
+    }
+
+    #container-2 div{
+        padding:0;
+    }
+
+    .input{
+        width:60vw;
+        height:3.5vw;
+        margin:0 0 5vw;
+    }
+
+    #mensagem{
+        height:10vw;
+    }
+
+    #input-dropbox {
+        height:30px;
+    }
+
+
+}
+
+@media (max-width:425px){
+    #container-2{
+        padding-top:15vw!important;
+        margin-bottom:0;
+    }
+
+    #container-2 h5{
+        font-size:4vw;
+        margin:0;
+    }
+
+    #container-2 p{
+        font-size:3vw;
+        margin:0;
+    }
+
+    .input{
+        height:5vw;
+    }
+
+    #botao-enviar {
+        font-size:5vw;
+        width: 20vw;
+        height:10vw;
+    }
+}

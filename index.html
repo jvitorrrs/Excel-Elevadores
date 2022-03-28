@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@350&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Excel Elevadores</title>
+</head>
+<body>
+    <div id="nav">
+        <div id="home-logo">
+            <div id="door1"></div>
+            <a href="index.html"><img src="img/logo-final.jpg" alt="Imagem do Logo" id="logo"></a>
+            <div id="door2"></div>
+        </div>
+        <div id="menu" class="menu">
+            <a href="#" id="sobre" data-toggle="modal" data-target="#modal">
+                Sobre Nós
+            </a>
+            <a href="manutencao.html">Manutenção e Modernização</a>
+            <a href="orcamento.html">Orçamento</a>
+        </div>
+        <a href="#" onclick="menuSlide()">
+            <div class="menu-mobile">
+                <div class="lines" id="line-1"></div>
+                <div class="lines" id="line-2"></div>
+                <div class="lines" id="line-3"></div>
+            </div>
+        </a>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sobre Nós</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Há mais de 20 anos no mercado, contando com os melhores e mais qualificados profissionais,
+                    a Excel Elevadores vem trabalhando em manutenção e modernização de elevadores desde 2000.
+                    Nossa missão é a garantia de um serviço bem prestado, com assistência 24 horas. Competência,
+                    qualidade e responsabilidade são alguns dos valores que mais prezamos e que sempre transparecemos ao cliente;
+                    Veja alguns de nossos serviços <a href="manutencao.html" style="font-weight:bold;">aqui!</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="home-image">
+            <img src="img/1.jpg" alt="Imagem HomePage" id="home-img-1">
+            <div id="img-span" class="animate__animated animate__heartBeat">
+                <div>
+                    <a href="orcamento.html" style="text-decoration:none; color:white"><p>solicite um orçamento agora!</p></a>
+                </div>
+            </div>
+            <div class="animate__animated animate__pulse" id="text">
+                <div>
+                    <h3>O que é a Excel Elevadores?</h3>
+                    <h6>
+                        É uma empresa experiente e objetiva que tem como suas principais funções a modernização
+                        e manutenção de elevadores.
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div id="text-2">
+            <div class="animate__animated animate__fadeInLeft">
+                <h2>Por que modernizar elevadores?</h2>
+                Há muito o que pode ser modernizado nos seus elevadores. Num mundo cada vez mais moderno e avançado,
+                os elevadores são meios de transporte que, ás vezes, podem passar batido, mas são responsáveis
+                por nossa locomoção. Um elevador antigo pode significar atrasos, stress, e até acidentes!
+            </div>
+        </div>
+        <div id="home-image-2">
+            <div id="text-4">
+                <div>
+                    <p>
+                        A Excel Elevadores conta com um time experiente, prático e bem qualificado
+                        para tratar das suas necessidades da melhor forma possível, com assistência
+                        24 horas!
+                    </p>
+                </div>
+            </div>
+            <img src="img/2.jpg" alt="Imagem HomePage" id="home-img-2" />
+        </div>
+        <div id="icons-text">
+            <div id="title">
+                <div><h1>Manutenções:</h1></div>
+            </div>
+            <div id="text-3">
+                <div class="animate__animated animate__fadeInLeft animate__delay-2s card-images">
+                    <img src="img/painel.jpg" alt="Imagem dos Cards" id="card-img-1">
+                    <div class="text-button">
+                        <p>
+                            O painel de controle do seu elevador pode ser atualizado, trazendo mais segurança.
+                        </p>
+                        <a href="manutencao.html"><span class="button" alt="Botão Saiba Mais" id="button-1">Saiba Mais</span></a>
+                    </div>
+                </div>
+                <div class="animate__animated animate__fadeInLeft animate__delay-3s card-images">
+                    <img src="img/fiacao.jpg" alt="Imagem dos Cards" id="card-img-2">
+                    <div class="text-button">
+                        <p>
+                            Uma fiação antiga pode significar risco de acidentes. Nós modernizamos!
+                        </p>
+                        <a href="manutencao.html"><span class="button" alt="Botão Saiba Mais" id="button-2">Saiba Mais</span></a>
+                    </div>
+                </div>
+                <div class="animate__animated animate__fadeInLeft animate__delay-4s card-images">
+                    <img src="img/botoeira.jpg" alt="Imagem dos Cards" id="card-img-3">
+                    <div class="text-button">
+                        <p>
+                            Botoeiras e Sinalizações fazem parte da acessibilidade dos elevadores.
+                        </p>
+                        <a href="manutencao.html"><span class="button" alt="Botão Saiba Mais" id="button-3">Saiba Mais</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="text-5">
+            <div>
+                <a href="orcamento.html" style="text-decoration: none; color:black" ;><p>solicite um orçamento agora!</p></a>
+            </div>
+        </div>
+        <footer>
+            <div id="contato">
+                Telefones: (11) 4975-0726 / 4902-5055 / 96199-0765<br />
+                E-mail: contato@excelelevadores.com.br<br />
+
+                Rua: Oratório, 1.463. Complemento: 2º andar - Conj. 5<br />
+                Bairro: Parque das Nações - Santo André - São Paulo<br />
+            </div>
+            <div>
+                <img src="img/logo (2).png" alt="Logo do Footer" style="opacity:0.5" id="footer-logo">
+            </div>
+        </footer>
+    </div>
+    <script>
+        $('#modal').on('shown.bs.modal', function () {
+            $('#sobre').trigger('focus')
+        })
+
+        function menuSlide() {
+            document.getElementById("menu").classList.toggle("menu-ativo");
+        };
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
